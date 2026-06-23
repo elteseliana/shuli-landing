@@ -480,6 +480,41 @@
     }
     .closing p em { font-style: normal; color: var(--rose); }
 
+    /* ============ Testimonials ============ */
+    .testimonials { background: var(--cream); }
+    .testimonials .quote {
+      max-width: 860px;
+      margin-inline: auto;
+      background: var(--white);
+      border-radius: 24px;
+      padding: clamp(2.2rem, 5vw, 3.6rem);
+      box-shadow: var(--shadow-lg);
+      position: relative;
+      text-align: start;
+    }
+    .testimonials .mark {
+      font-family: 'Frank Ruhl Libre', serif;
+      font-size: 4.5rem; line-height: 0.7;
+      color: var(--rose); opacity: 0.3;
+      display: block; height: 2rem;
+    }
+    .testimonials .stars { color: var(--rose); letter-spacing: 0.18em; font-size: 0.95rem; margin-bottom: 1.2rem; }
+    .testimonials .qtext p {
+      color: var(--ink);
+      font-size: clamp(1.02rem, 2vw, 1.16rem);
+      font-weight: 400;
+      line-height: 1.9;
+      margin-bottom: 1.1rem;
+    }
+    .testimonials .qtext p:last-child { margin-bottom: 0; }
+    .testimonials .who {
+      display: block;
+      margin-top: 1.8rem;
+      color: var(--sage-deep);
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
     /* ============ FAQ ============ */
     .faq { background: var(--ivory); }
     .faq-list { max-width: 760px; margin-inline: auto; }
@@ -713,6 +748,28 @@
     </div>
   </section>
 
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="index" data-key="test.index">04 — המלצות</span>
+        <span class="eyebrow" data-key="test.eyebrow">לקוחות ממליצים</span>
+        <h2 class="reveal-text" data-key="test.h2">מה הורים מספרים</h2>
+      </div>
+      <div class="quote reveal d1">
+        <span class="mark">”</span>
+        <div class="stars">★★★★★</div>
+        <div class="qtext" data-key="test.1.p">
+          <p>בעקבות אבחון שאישר שהבת שלנו (בת 10) בעלת ADHD, קיבלנו המלצה מבית הספר לעבור סדרת מפגשים עם שולי. הסדרה כללה שני מפגשי הדרכת הורים, שני מפגשים פרטניים עם בתנו ושני מפגשים משותפים של ארבעתנו: שולי, בתנו ואנחנו.</p>
+          <p>המפגשים שלנו כזוג עם שולי הדגישו את הקשיים שאיתם אנו מתמודדים ונתנו להם מקום. שולי הייתה מלאת הצעות, ובעצם גרמה לנו להתכנס לתהליך משפחתי חיובי ומחזק.</p>
+          <p>בשני המפגשים הפרטניים עם בתנו נוצר חיבור מיידי בינה לבין שולי, איתה היא חלקה את הקשיים שלה וקיבלה כלים רבים להתמודדות בכיתה ובחיים עצמם עם הקשיים שאיתם היא מתמודדת.</p>
+          <p>במפגשים המשותפים שלנו עם בתנו ושולי קיבלנו הצצה נדירה לתהליך העבודה המרתק של שולי עם בתנו, והתמודדנו עם אמיתות שהיה חשוב לנו לראות. בנוסף, בהמלצתה של שולי התקדמנו לאבחון נוסף, ואנחנו כל כך מודים לה על זווית הראייה המקצועית והכנה.</p>
+        </div>
+        <span class="who" data-key="test.1.who">— הורים לילדה בת 10</span>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CLOSING ============ -->
   <section class="closing">
     <div class="wrap reveal">
@@ -724,7 +781,7 @@
   <section class="faq" id="faq">
     <div class="wrap">
       <div class="section-head center reveal">
-        <span class="index" data-key="faq.index">04 — שאלות נפוצות</span>
+        <span class="index" data-key="faq.index">05 — שאלות נפוצות</span>
         <span class="eyebrow" data-key="faq.eyebrow">כל מה שרציתם לדעת</span>
         <h2 class="reveal-text" data-key="faq.h2">שאלות ותשובות</h2>
       </div>
@@ -854,10 +911,17 @@
                          en: 'With over 35 years of working with children and families, and as a mother of seven and grandmother of nine, I bring rich life experience, genuine compassion and professional tools. I am based in Ra\'anana and guide parents, children and adults toward a calmer, clearer and more connected home.' },
         'about.sig':   { he: 'באהבה, שולי קורני', en: 'With love, Shuli Corney' },
 
+        'test.index':   { he: '04 — המלצות', en: '04 — Testimonials' },
+        'test.eyebrow': { he: 'לקוחות ממליצים', en: 'Clients recommend' },
+        'test.h2':      { he: 'מה הורים מספרים', en: 'What parents say' },
+        'test.1.p':  { he: '<p>בעקבות אבחון שאישר שהבת שלנו (בת 10) בעלת ADHD, קיבלנו המלצה מבית הספר לעבור סדרת מפגשים עם שולי. הסדרה כללה שני מפגשי הדרכת הורים, שני מפגשים פרטניים עם בתנו ושני מפגשים משותפים של ארבעתנו: שולי, בתנו ואנחנו.</p><p>המפגשים שלנו כזוג עם שולי הדגישו את הקשיים שאיתם אנו מתמודדים ונתנו להם מקום. שולי הייתה מלאת הצעות, ובעצם גרמה לנו להתכנס לתהליך משפחתי חיובי ומחזק.</p><p>בשני המפגשים הפרטניים עם בתנו נוצר חיבור מיידי בינה לבין שולי, איתה היא חלקה את הקשיים שלה וקיבלה כלים רבים להתמודדות בכיתה ובחיים עצמם עם הקשיים שאיתם היא מתמודדת.</p><p>במפגשים המשותפים שלנו עם בתנו ושולי קיבלנו הצצה נדירה לתהליך העבודה המרתק של שולי עם בתנו, והתמודדנו עם אמיתות שהיה חשוב לנו לראות. בנוסף, בהמלצתה של שולי התקדמנו לאבחון נוסף, ואנחנו כל כך מודים לה על זווית הראייה המקצועית והכנה.</p>',
+                       en: '<p>After a diagnosis confirmed that our daughter (age 10) has ADHD, the school recommended a series of sessions with Shuli. The series included two parent-guidance sessions, two one-on-one sessions with our daughter, and two joint sessions for all four of us: Shuli, our daughter and us.</p><p>Our sessions as a couple with Shuli highlighted the challenges we face and gave them space. Shuli was full of suggestions and truly drew us together into a positive, strengthening family process.</p><p>In the two one-on-one sessions with our daughter, an immediate connection formed between her and Shuli, with whom she shared her difficulties and received many tools for coping in the classroom and in life with the challenges she faces.</p><p>In our joint sessions with our daughter and Shuli, we got a rare glimpse into Shuli\'s fascinating work with our daughter, and confronted truths that were important for us to see. In addition, at Shuli\'s recommendation we moved on to a further evaluation, and we are so grateful to her for her professional and honest perspective.</p>' },
+        'test.1.who': { he: '— הורים לילדה בת 10', en: '— Parents of a 10-year-old girl' },
+
         'closing': { he: 'הצעד הראשון לבית רגוע יותר מתחיל ב<em>שיחה אחת</em> קטנה.',
                      en: 'The first step to a calmer home begins with <em>one small</em> conversation.' },
 
-        'faq.index':   { he: '04 — שאלות נפוצות', en: '04 — FAQ' },
+        'faq.index':   { he: '05 — שאלות נפוצות', en: '05 — FAQ' },
         'faq.eyebrow': { he: 'כל מה שרציתם לדעת', en: 'Everything you wanted to know' },
         'faq.h2':      { he: 'שאלות ותשובות', en: 'Questions & answers' },
         'faq.1.q': { he: 'למי הליווי מתאים?', en: 'Who is the guidance for?' },
